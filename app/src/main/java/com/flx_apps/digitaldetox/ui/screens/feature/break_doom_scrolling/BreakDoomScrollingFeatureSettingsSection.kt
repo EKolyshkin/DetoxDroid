@@ -39,7 +39,7 @@ fun BreakDoomScrollingFeatureSettingsSection(
             label = {
                 context.getString(R.string.time__minutes, it)
             },
-            range = 1..60
+            range = 5..60 step 5
         )
     }
 

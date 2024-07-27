@@ -30,7 +30,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 fun NumberPickerDialog(
     titleText: String = "Number Picker",
     initialValue: Int,
-    range: Iterable<Int> = 0..100,
+    range: Iterable<Int> = (0..100 step 15),
     label: (Int) -> String = { it.toString() },
     onValueSelected: (Int) -> Unit,
     onDismissRequest: () -> Unit = {}

@@ -133,6 +133,7 @@ object DisableAppsFeature : Feature(), OnAppOpenedSubscriptionFeature,
         when (operationMode) {
             DisableAppsMode.BLOCK -> {
                 context.startService(Intent(context, AppDisabledOverlayService::class.java).apply {
+                    Timber.d("Disabled Package Name: " + OverlayService.EXTRA_RUNNING_APP_PACKAGE_NAME)
                     putExtra(OverlayService.EXTRA_RUNNING_APP_PACKAGE_NAME, packageName)
                 })
             }

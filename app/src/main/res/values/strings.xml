@@ -1,6 +1,6 @@
 <resources>
     <!-- region Global Strings -->
-    <string name="app.name_">DetoxDroid</string> <!-- added a underscore to this string name, as some library reserved a string with the name "app.name" already -->
+    <string name="app.name_">DetoxDroid Test</string> <!-- added a underscore to this string name, as some library reserved a string with the name "app.name" already -->
     <string name="app.quickSettingsTile">Pause DetoxDroid</string>
     <string name="app.quickSettingsTile.paused">DetoxDroid has been paused for %d minutes.</string>
     <string name="app.quickSettingsTile.noPause">Take another pause in %d minutes.</string>
@@ -82,11 +82,11 @@
     <string name="feature.pause.fromHardwareButton.unset">Delete Assignment</string>
     <string name="feature.pause.fromHardwareButton.appNotRunning">DetoxDroid has to be running in order to assign a new hardware button.</string>
 
-    <string name="feature.doomScrolling">Break "Infinite Scrolling"</string>
+    <string name="feature.doomScrolling">Break Doomscrolling</string>
     <string name="feature.doomScrolling.subtitle">Don\'t get lost in obsessive checking behaviors</string>
-    <string name="feature.doomScrolling.description">EXPERIMENTAL – Infinite scrolling is a manipulative design technology that eliminates those brief moments where you might turn to another activity. DetoxDroid can try to detect if you have been lost in such behavior and offer you an exit.</string>
+    <string name="feature.doomScrolling.description">EXPERIMENTAL – Infinite Scrolling is a manipulative design technology that eliminates those brief moments where you might turn to another activity. DetoxDroid can try to detect if you have been lost in such behavior and offer you an exit.</string>
     <string name="feature.doomScrolling.timeUntilWarning">Time Until Warning</string>
-    <string name="feature.doomScrolling.timeUntilWarning.description">DetoxDroid will notify you if it detects that you have been "doom scrolling" for this duration.</string>
+    <string name="feature.doomScrolling.timeUntilWarning.description">DetoxDroid will notify you if it detects that you have been "doomscrolling" for this duration.</string>
 
     <string name="feature.settings.exceptions">App Exceptions</string>
     <string name="feature.settings.exceptions._notListed">%d apps will not be affected by this feature</string>
@@ -132,8 +132,8 @@
     <string name="exceptionsList.filter.systemApps">System Apps</string>
 
     <string name="infiniteScroll.warning.title">Wake Up!</string>
-    <string name="infiniteScroll.warning.message">It appears you are caught in a loop of infinite-scrolling.</string>
-    <string name="infiniteScroll.warning.exit">Get me out of here</string>
+    <string name="infiniteScroll.warning.message">You\'ve been caught doomscrolling.</string>
+    <string name="infiniteScroll.warning.exit">Get me out</string>
     <string name="infiniteScroll.warning.continue">I want to continue</string>
 
     <string name="about.coffee">Buy me a coffee</string>

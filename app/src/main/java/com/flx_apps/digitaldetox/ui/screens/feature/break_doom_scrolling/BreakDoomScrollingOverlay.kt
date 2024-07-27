@@ -23,13 +23,13 @@ import androidx.compose.ui.unit.dp
 import com.flx_apps.digitaldetox.R
 import com.flx_apps.digitaldetox.system_integration.OverlayContent
 import com.flx_apps.digitaldetox.system_integration.OverlayService
-import com.flx_apps.digitaldetox.ui.theme.DetoxDroidTheme
+import com.flx_apps.digitaldetox.ui.theme.*
 
 /**
  * The service that shows the warning screen when the user is caught "doomscrolling". It is an
  * [OverlayService] that shows the [BreakDoomScrollingOverlay].
  *
- * The service is started by [BreakDoomScrollingFeature.onScrollEvent], when certain conditions
+ * The service is started by BreakDoomScrollingFeature.onScrollEvent, when certain conditions
  * are met.
  */
 class BreakDoomScrollingOverlayService :
@@ -47,7 +47,7 @@ fun BreakDoomScrollingOverlay() {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .background(Color.Black.copy(alpha = 0.9f))
+                .background(Color.Black)
                 .padding(horizontal = 32.dp), horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Spacer(modifier = Modifier.weight(2f))
@@ -68,7 +68,10 @@ fun BreakDoomScrollingOverlay() {
                 .scale(1.5f), onClick = {
                 (context as OverlayService).closeOverlay()
             }) {
-                Text(text = stringResource(id = R.string.infiniteScroll_warning_exit))
+                Text(
+                    text = stringResource(id = R.string.infiniteScroll_warning_exit),
+                    color = Purple80
+                )
             }
             Spacer(modifier = Modifier.weight(1f))
             Image(

@@ -64,7 +64,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app.name_"
             android:theme="@style/Theme.DetoxDroid">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

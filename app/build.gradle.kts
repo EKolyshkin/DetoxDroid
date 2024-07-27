@@ -12,7 +12,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.flx_apps.digitaldetox"
+        applicationId = "com.flx_apps.digitaldetox_TEST"
         minSdk = 26
         targetSdk = 33
         versionCode = 20006
